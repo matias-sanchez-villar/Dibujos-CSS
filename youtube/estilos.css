@@ -2,14 +2,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .imagen{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     align-content: center;
     background-color: red;
     height: 16rem;
@@ -18,8 +16,8 @@ body{
     margin: 50px;
 
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 }
 
 .triangulo{
@@ -28,4 +26,5 @@ box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
     border-left: 120px solid #ffffff;
     border-top: 56px solid transparent;
     border-bottom: 56px solid transparent;
+    position: relative;
 }
