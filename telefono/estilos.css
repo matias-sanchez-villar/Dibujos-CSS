@@ -1,0 +1,21 @@
+.carcasa{
+    background-color: black;
+    height: 25rem;
+    width: 15rem;
+    border-radius: 35px;
+    display: grid;
+}
+
+.parlante, .microfono{
+    background-color: #d0d0d0;
+    height: 3px;
+    width: 25px;
+    margin: auto;
+}
+
+.pantalla{
+    background-color: #d0d0d0;
+    height: 23rem;
+    border-radius: 35px;
+    border: 7px solid #000000;
+}
