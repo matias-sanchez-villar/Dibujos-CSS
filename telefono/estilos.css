@@ -12,19 +12,23 @@
 .superior{
     width: 100%;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 205px;
 }
 
 .camara{
+    grid-column: 1 / 2;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: rgba(224, 224, 224, 0.883);
+    margin-top: 18px;
+    margin-left: 47px;
 }
 
 .parlante, .microfono{
+    grid-column: 2 / 4;
     width: 65px;
     height: 10px;
     border-radius: 4px;
@@ -32,11 +36,45 @@
     padding: center;
 }
 
+.parlante{
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
 .pantalla{
     width: 90%;
     height: 390px;
     background-color: blanchedalmond;
     border-radius: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 205px;
+}
+
+.botones{
+    margin-top: 368px;
+    background: rgba(212, 212, 212, 0.774);
+    height: 23px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cuadrado, .circulo, .triangulo{
+    background-color: rgb(0, 0, 0);
+    height: 12px;
+    width: 12px;
+}
+
+.cuadrado{
+    border-radius: 1.5px;
+}
+
+.circulo{
+    border-radius: 50%;
+}
+
+.triangulo{
+    clip-path: polygon(100% 50%, 12% 5%, 12% 100%);
 }
 
 .microfono{
