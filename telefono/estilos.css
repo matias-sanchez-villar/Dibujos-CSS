@@ -25,7 +25,20 @@
     background-color: rgba(224, 224, 224, 0.883);
     margin-top: 18px;
     margin-left: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.camara::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.883);
+    z-index: 100;
+}
+
 
 .parlante, .microfono{
     grid-column: 2 / 4;
@@ -50,8 +63,41 @@
     grid-template-rows: 205px;
 }
 
+.info{
+    background: rgba(212, 212, 212, 0.774);
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bateria{
+    border: 2px solid black;
+    height: 10px;
+    width: 24px;
+    border-radius: 3px;
+    display: flex;
+}
+
+.bateria::after{
+    content: '';
+    background-color: rgb(0, 0, 0);
+    height: 12px;
+    width: 18px;
+    z-index: 1000;
+}
+
+
+.señal{
+    background-color: rgb(0, 0, 0);
+    height: 12px;
+    width: 24px;
+    border-radius: 50%;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
 .botones{
-    margin-top: 368px;
+    margin-top: 344px;
     background: rgba(212, 212, 212, 0.774);
     height: 23px;
     display: flex;
