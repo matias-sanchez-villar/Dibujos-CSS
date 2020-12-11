@@ -16,9 +16,9 @@ body{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(2, 100px);
-    grid-auto-flow: column dense; /*dense= acomoda*/
+    grid-template-columns: repeat(2, minmax(50px, 100px)); /*minmax funcion de (minimo y maximo)*/
+    grid-template-rows: repeat(2, minmax(min-content, max-content)); /* min-content se encoje hasta el contenido pudiendo romperlo -- max-content se encoje hasta el contenido sin romperlo*/
+    grid-auto-flow: column dense;
     grid-auto-columns: 200px;
 }
 
