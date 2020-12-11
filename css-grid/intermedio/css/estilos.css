@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px repeat(4, 100px 80px); /*funcion repeat (cant columnas, medidas de las columnas)*/
+    grid-template-rows: repeat(3, 100px);
+}
+
+.grid-items{
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 2em
+}
