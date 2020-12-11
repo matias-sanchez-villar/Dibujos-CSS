@@ -5,8 +5,17 @@ body {
 .grid-container {
     display: grid;
     grid-gap: 2px;
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* auto-fill no permite que los elementos crescan mas -- mantienen el mismo tamaño y saltan*/
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* auto-fit los elementos acupan toda la pantalla necesaria -- saltan y ocupan todo el espacio disponible*/
+    grid-template-columns: repeat(auto-fill, minmax(50px, 100px)); /* auto-fill no permite que los elementos crescan mas -- mantienen el mismo tamaño y saltan*/
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px)); /* auto-fit los elementos acupan toda la pantalla necesaria -- saltan y ocupan todo el espacio disponible*/
+    /*alineacion de los elementos*/
+    justify-items: center;
+    align-items: flex-end;
+    place-items: center end;/*engloba las 2 opciones*/
+    /*alineacion de los contenidos*/
+    justify-content: space-between;
+    align-content: stretch;
+    place-content: center;/*engloba las 2 opciones*/
+
 }
 
 .grid-items {
