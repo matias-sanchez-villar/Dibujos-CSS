@@ -6,10 +6,20 @@ body{
     height: 100vh;
 }
 
+/*
 .grid-container{
     display: grid;
-    grid-template-columns: 200px repeat(4, 100px 80px); /*funcion repeat (cant columnas, medidas de las columnas)*/
+    grid-template-columns: 200px repeat(3, 100px 80px); funcion repeat (cant columnas, medidas de las columnas)
     grid-template-rows: repeat(3, 100px);
+}
+*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    grid-auto-flow: column dense; /*dense= acomoda*/
+    grid-auto-columns: 200px;
 }
 
 .grid-items{
