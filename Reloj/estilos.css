@@ -20,8 +20,5 @@ body{
    font-size: 20px;
    font-weight: 900;
    text-align: center;
-}
-
-.numero:nth-child(1){
-    
+   display: inline-block;
 }
